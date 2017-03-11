@@ -1,0 +1,150 @@
+/******************* initialize ********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/************************* header ***********************/
+
+header {
+    position: fixed;
+    background-color: #eeeeee;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #dde7e9;
+}
+header a {
+    display: inline-block;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+    color: black;
+}
+header a h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: black;
+    width: 150px;
+}
+header nav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 10px 7px;
+}
+header nav ul li a {
+    font-weight: 500;
+    color: purple;
+}
+header nav ul li a:hover {
+    color: blue;
+    font-size: 120%;        /* because I can */
+}
+
+/**************************** search jobs section ************/
+
+#search-jobs {
+    margin-left: 60px;
+    margin-top: 100px;
+}
+#search-jobs input[type=text] {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#search-jobs .search-icon {
+    height: 30px;
+    vertical-align: middle;
+    border: 2px solid #a8b5c1;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+#search-jobs button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/**************************** pages menu section **************/
+
+#pages-menu {
+    margin-left: 60px;
+    margin-top: 50px;
+    border: 1px solid #a8b5c1;
+    border-radius: 5px;
+    width: 300px;
+}
+#pages-menu a {
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+#pages-menu a:hover {
+    text-decoration: underline;
+}
+#pages-menu a:first-child {
+    border-right: 1px solid #a8b5c1;
+}
+#pages-menu a:first-child::before {
+    content: '< ';
+}
+#pages-menu a:last-child {
+    border-left: 1px solid #a8b5c1;
+}
+#pages-menu a:last-child::after {
+    content: ' >';
+}
+#pages-menu span {
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+/**************************** main tag ********************/
+
+main {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+/**************************** jobs list section ***************/
+
+#jobs-list {
+    padding-top: 20px;
+}
+#jobs-list ul {
+    list-style: none;
+    font-size: 16px;
+}
+#jobs-list ul span {
+    color: #a3b0bc;
+}
+#jobs-list ul li {
+    padding: 15px 0;
+    font-weight: 500;
+}
+#jobs-list ul li a {
+    text-decoration: none;
+}
+#jobs-list ul li a:hover {
+    text-decoration: underline;
+}
+#jobs-list ul li .before-a {
+    padding-right: 10px;
+}
+#jobs-list ul li .after-a {
+    padding-left: 10px;
+}

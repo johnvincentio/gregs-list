@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Greg's List classified ads">
+    <meta name="keywords" content="Computer,Software,HTML,CSS,JavaScript,Java,Python,Web Development,Oracle,Scala,Spring">
+    <meta name="author" content="Thomas Duck">
+    <title>Greg's List</title>
+    <link href="https://fonts.google.com/?selection.family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <h1>Greg's List</h1>
+        </a>
+        <nav role="navigation">
+            <ul>
+                <li>
+                    <a href="#">Post</a>
+                </li>
+                <li>
+                    <a href="#">Account</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search-jobs" role="search">
+        <form action="#">
+            <input name="search-field" type="text" size="50" placeholder="Search software jobs">
+            <button type="submit">
+                <img class="search-icon" src="images/magnifying-glass.png" alt="Search...">
+            </button>
+        </form>
+    </section>
+
+    <nav id="pages-menu">
+       <a href="#">prev</a>
+       <span>1 to 100 of 179</span>
+       <a href="#">next</a>
+    </nav>
+
+    <main role="main">
+        <section id="jobs-list" role="contentinfo" itemscope itemtype="http://schema.org/JobPosting">
+            <ul>
+                <li>
+                    <span class="before-a" itemprop="datePosted">June 22</span>
+                    <a href="#" itemprop="title">Technical Project Manager</a>
+                    <span class="after-a" itemprop="jobLocation">Midtown East</span>
+                </li>
+                <li>
+                    <span class="before-a" itemprop="datePosted">June 21</span>
+                    <a href="#" itemprop="title">Frontend Developer</a>
+                    <span class="after-a" itemprop="jobLocation">SoHo</span>
+                </li>
+                <li>
+                    <span class="before-a" itemprop="datePosted">June 20</span>
+                    <a href="#" itemprop="title">Senior Python Developer / Co-founder</a>
+                    <span class="after-a" itemprop="jobLocation">Flatiron</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
